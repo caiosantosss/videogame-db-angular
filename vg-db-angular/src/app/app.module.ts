@@ -40,7 +40,7 @@ import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
       provide: HTTP_INTERCEPTORS,
       useClass: HttpHeadersInterceptor,
       multi: true,
-    }
+    },
     {
       provide: HTTP_INTERCEPTORS,
       useClass: HttpErrorsInterceptor,
